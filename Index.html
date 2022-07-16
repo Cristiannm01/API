@@ -23,11 +23,26 @@
         </section>
     </div>
     <section id="contenedorIniciar">
-        <button onclick="getImage()">Imagen random</button>
+        <button onclick="getImage()">Imagen Aleatoria</button>
     </section>
 
-    <section id="contenedorFiltros">
-        <button onclick="aplicarFiltro()">aplicar</button>
+    <section id="contenedorFiltros1">
+        <button onclick="aplicarFiltro('green')">Green</button>
+        <button onclick="aplicarFiltro('red')">Red</button>
+        <button onclick="aplicarFiltro('gaussian')">Gaussian</button>
+        <button onclick="aplicarFiltro('grayscale')">Grayscale</button>
+        <button onclick="aplicarFiltro('invert')">Invert</button>
+        <button onclick="aplicarFiltro('laplacian')">Laplacian</button>
+        <button onclick="aplicarFiltro('prewittHorizontal')">PrewittHorizontal</button>
+    </section>
+    <section id="contenedorFiltros2">
+        <button onclick="aplicarFiltro('prewittVertical')">PrewittVertical</button>
+        <button onclick="aplicarFiltro('roberts')">Roberts</button>
+        <button onclick="aplicarFiltro('saturation')">Saturation</button>
+        <button onclick="aplicarFiltro('sepia')">Sepia</button>
+        <button onclick="aplicarFiltro('sharpen')">Sharpen</button>
+        <button onclick="aplicarFiltro('sobelHorizontal')">SobelHorizontal</button>
+        <button onclick="aplicarFiltro('sobelVertical')">SobelVertical</button>
     </section>
 
 </body>

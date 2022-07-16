@@ -2,7 +2,7 @@
 var url = "https://picsum.photos/500/500";
 var imagenOriginal
 var nameDownload = 'image.jpg'
-
+var color = ""
 function getImage() {
 
     fetch(url).then(resp => resp.blob())
@@ -21,9 +21,9 @@ function getImage() {
     imagenOriginal = document.getElementById('imagen')
 }
 
-function aplicarFiltro() {
+function aplicarFiltro(filter) {
     imagenOriginal = document.getElementById("imagen")
     var imagenFiltro = document.getElementById("canvasFiltro")
-    var filter = LenaJS.green
+    filter = LenaJS[filter]
     LenaJS.filterImage(imagenFiltro, filter, imagenOriginal)
 }

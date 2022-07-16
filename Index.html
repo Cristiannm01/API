@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,24 +8,28 @@
     <title>Lena</title>
     <script src="node_modules/lena.js/dist/browser.js"></script>
     <script src="Javascript/code.js"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../CSS/style.css">
 </head>
-<body >
+
+<body>
     <header>
         <h1>LenaJS y Lorem Picsum</h1>
     </header>
-    <section id="contendorImages">
-    <img id="imagen" src="./images/image.jpg">
-    <canvas id="canvasFiltro" width="500" height="500"></canvas>
-</section>
 
-<section id="contenedorIniciar">
-    <button onclick="getImage()">Imagen random</button>
-</section>
+    <div id="screen">
+        <section id="contendorImages">
+            <img id="imagen" src="./images/image.jpg">
+            <canvas id="canvasFiltro" width="500" height="500"></canvas>
+        </section>
+    </div>
+    <section id="contenedorIniciar">
+        <button onclick="getImage()">Imagen random</button>
+    </section>
 
-<section id="contenedorFiltros">
-    <button onclick="aplicarFiltro()">aplicar</button>
-</section>
+    <section id="contenedorFiltros">
+        <button onclick="aplicarFiltro()">aplicar</button>
+    </section>
 
 </body>
+
 </html>
